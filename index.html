@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="survey.css">
+</head>
+<body>
+<body>
+	<!---->
+	<div class="container">
+		<header class="header">
+			<!--1-->
+			<h1 id="title" class="text-center">Website Survey Form</h1>
+			<p id="description">Thank you for taking the time to help us to improve our platform</p>
+		</header>
+	
+	<form id="survey-form">
+
+		<div class="form-group">
+			<label for="name" id="name-label">Your Name</label>
+			<input type="text" name="Name" id="name" placeholder="Enter Your Full Name" class="form-control" required="required">
+		</div>
+
+
+		<div class="form-group">
+			<label for="mail" id="email-label">Your Email</label>
+			<input type="email" name="email" id="email" placeholder="Enter Your Email"  class="form-control" required>
+		</div>
+
+		<div class="form-group">
+			<label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+			<input type="number" id="number" name="age" min="10" max="100" placeholder="Age" class="form-control">
+		</div>
+
+
+		<div class="form-group">
+			<label for="Gender">Gender</label>
+			<select id="dropdown" class="form-control">
+				<option disabled selected value>Your gender</option>
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+				<option value="Other">Other</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<p>Which option best describes your current role?</label><br>
+			<select id="dropdown" name="role" class="form-control" required="required" >
+				<option disabled selected value>Your current role</option>
+				<option value="Student">Student</option>
+				<option value="Full time job">Full time job</option>
+				<option value="Part time job">Part time job</option>
+				<option value="Full time learner">Full time learner</option>
+				<option value="Prefer not to say">Prefer not to say</option>
+				<option value="unemployed">Unemployed</option>
+				<option value="Other">Other</option>
+			</select>
+		</div>
+
+
+		<div class="form-group">
+		<p for="sugg">Would you recommend our website to a friend?</p>
+		<label><input class="input-radio" type="radio" name="sugg" value="Definitely" checked="">Definitely</label><br>
+		<label><input class="input-radio" type="radio" name="sugg" value="Maybe" checked="">Maybe</label><br>
+		<label><input class="input-radio" type="radio" name="sugg" value="Not sure" checked="">Not sure</label><br>
+		<label><input class="input-radio" type="radio" name="sugg" value="Not at all" checked="">Not at all</label>
+		</div>
+
+		<div class="form-group">
+			<p for="feature">What is your favorite feature of this website?</p>
+			<select id="feature" required="required" class="form-control">
+				<option disabled selected value>Select an option</option>
+				<option value="Challenges">Challenges</option>
+				<option value="Project">Project</option>
+				<option value="Community">Community</option>
+				<option value="Open source">Open source</option>
+				<option value="Ease of access">Ease of access</option>	
+			</select>
+		</div>
+		
+
+		<div class="form-group">
+			<p>What would you like to see improved? <span class="clue">(Check all that apply)</span></p>
+			<label><input class="input-checkbox" type="checkbox" name="fep" value="fep">Front-end projects</label>
+			<label><input class="input-checkbox" type="checkbox" name="bep" value="bep">Back-end projects</label>
+			<label><input class="input-checkbox" type="checkbox" name="data" value="data">Data visualization</label>
+			<label><input class="input-checkbox" type="checkbox" name="Challenges" value="Challenges">Challenges</label>
+			<label><input class="input-checkbox" type="checkbox" name="forum" value="forum">Community forum</label>
+			<label><input class="input-checkbox" type="checkbox" name="Wiki" value="Wiki">Wiki</label>
+			<label><input class="input-checkbox" type="checkbox" name="Meetups" value="Meetups">Meetups</label>
+			<label><input class="input-checkbox" type="checkbox" name="resources" value="resources">Additional resources</label>
+			<label><input class="input-checkbox" type="checkbox" name="quiz" value="quiz">Monthly quiz</label>
+			<label><input class="input-checkbox" type="checkbox" name="Videos" value="Videos">Videos</label>
+		</div>
+
+
+		<div class="form-group">
+			<p>Any comments or suggestions?</p>
+			<textarea id="comments" name="comment" class="input-textarea" placeholder="Enter Your comments here"></textarea>
+		</div>
+
+		<div class="form-group">
+			<button type="Submit" class="submit-button" id="submit">Submit</button>
+		</div>
+		
+
+
+	</form>
+</div>
+
+</body>
+</html>
+</body>
+</html>
